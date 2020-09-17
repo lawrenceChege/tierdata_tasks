@@ -1,28 +1,28 @@
 <template>
-  <div class="container">
+  <b-container fluid="sm">
     <div>
       <Logo />
-      <h1 class="title">tasks</h1>
+      <h1 class="title">Tasks</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
+        <NuxtLink
+          to="/auth/signup"
+          target="_self"
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
+          Sign Up
+        </NuxtLink>
+        <NuxtLink
+          to="/auth/login"
+          target="_self"
           rel="noopener noreferrer"
           class="button--grey"
         >
-          GitHub
-        </a>
+          Login
+        </NuxtLink>
       </div>
     </div>
-  </div>
+  </b-container>
 </template>
 
 <script>
