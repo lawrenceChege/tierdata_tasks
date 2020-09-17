@@ -1,44 +1,51 @@
 <template>
   <div>
-    <Login class="center-image" />
-    <h4 class="center-text">Login</h4>
+    <Invite class="center-image" />
+    <h4 class="center-text">Invite to collaborate</h4>
     <b-form v-if="show" @submit="onSubmit" @reset="onReset">
       <b-form-group
-        id="input-group-1"
+        id="input-group-01"
         label-align-sm="left"
-        label="Email"
-        label-for="input-1"
+        label="User 1"
+        label-for="input-01"
       >
         <b-form-input
-          id="input-1"
-          v-model="form.email"
+          id="input-01"
+          v-model="form.userOne"
           type="email"
-          required
-          placeholder="johndoe@domain.com"
+          placeholder="johndoe@domian.com"
         ></b-form-input>
       </b-form-group>
-
       <b-form-group
-        id="input-group-2"
+        id="input-group-02"
         label-align-sm="left"
-        label="Password:"
-        label-for="input-2"
+        label="User 2"
+        label-for="input-02"
       >
         <b-form-input
-          id="input-2"
-          v-model="form.password"
-          type="password"
-          required
-          placeholder="********"
+          id="input-02"
+          v-model="form.userTwo"
+          type="email"
+          placeholder="johndoe@domian.com"
+        ></b-form-input>
+      </b-form-group>
+      <b-form-group
+        id="input-group-03"
+        label-align-sm="left"
+        label="User 3"
+        label-for="input-03"
+      >
+        <b-form-input
+          id="input-03"
+          v-model="form.userThree"
+          type="email"
+          placeholder="johndoe@domian.com"
         ></b-form-input>
       </b-form-group>
       <b-button class="width-vp" type="submit" variant="primary"
-        >Login</b-button
+        >Invite Members</b-button
       >
-      <p>
-        Not Registered?
-        <NuxtLink to="/auth/signup">Sign up</NuxtLink>
-      </p>
+      <b-button type="submit" variant="outline-success"> Skip </b-button>
     </b-form>
     <b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>
@@ -51,8 +58,9 @@ export default {
   data() {
     return {
       form: {
-        email: '',
-        password: '',
+        userOne: '',
+        userTwo: '',
+        userThree: '',
       },
       show: true,
     }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Signup class="center-image" />
+    <Verify class="center-image" />
     <h4 class="center-text">Verify Phone Number</h4>
     <div>
       <p>

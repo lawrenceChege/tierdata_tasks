@@ -3,7 +3,12 @@
     <Signup class="center-image" />
     <h4 class="center-text">Sign Up</h4>
     <b-form v-if="show" @submit="onSubmit" @reset="onReset">
-      <b-form-group id="input-group-01" label="Username" label-for="input-01">
+      <b-form-group
+        id="input-group-01"
+        label-align-sm="left"
+        label="Username"
+        label-for="input-01"
+      >
         <b-form-input
           id="input-01"
           v-model="form.username"
@@ -13,7 +18,12 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group id="input-group-1" label="Email" label-for="input-1">
+      <b-form-group
+        id="input-group-1"
+        label-align-sm="left"
+        label="Email"
+        label-for="input-1"
+      >
         <b-form-input
           id="input-1"
           v-model="form.email"
@@ -25,6 +35,7 @@
       <b-form-group
         id="input-group-02"
         label="Phone Number"
+        label-align-sm="left"
         label-for="input-02"
       >
         <b-form-input
@@ -36,7 +47,12 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group id="input-group-2" label="Password:" label-for="input-2">
+      <b-form-group
+        id="input-group-2"
+        label-align-sm="left"
+        label="Password:"
+        label-for="input-2"
+      >
         <b-form-input
           id="input-2"
           v-model="form.password"
