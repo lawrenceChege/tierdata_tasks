@@ -26,7 +26,7 @@
       </div>
       <div class="card-list-footer">
         <div>
-          <b-button>Finish Project</b-button>
+          <b-button variant="outline-success">Finish Project</b-button>
         </div>
       </div>
     </div>

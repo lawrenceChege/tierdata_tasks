@@ -26,7 +26,9 @@
       </div>
       <div class="card-list-footer">
         <div>
-          <b-button v-b-modal.modal-1>Add Task</b-button>
+          <b-button v-b-modal.modal-1 variant="outline-warning"
+            >Add Task</b-button
+          >
 
           <b-modal id="modal-1" title="BootstrapVue">
             <AddTask />
