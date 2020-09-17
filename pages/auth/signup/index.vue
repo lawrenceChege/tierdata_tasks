@@ -46,11 +46,11 @@
         ></b-form-input>
       </b-form-group>
       <b-button class="width-vp" type="submit" variant="primary"
-        >Login</b-button
+        >Sign Up</b-button
       >
       <p>
         Already Registered?
-        <NuxtLink to="/auth/signup">signup</NuxtLink>
+        <NuxtLink to="/auth/login">Login</NuxtLink>
       </p>
     </b-form>
     <b-card class="mt-3" header="Form Data Result">
@@ -90,18 +90,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-.width-vp {
-  width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.center-text {
-  text-align: center;
-}
-</style>

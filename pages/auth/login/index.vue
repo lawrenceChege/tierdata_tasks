@@ -65,18 +65,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-.width-vp {
-  width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.center-text {
-  text-align: center;
-}
-</style>
