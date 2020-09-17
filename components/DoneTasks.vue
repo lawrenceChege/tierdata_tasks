@@ -8,7 +8,6 @@
             <b-card-text> Task description </b-card-text>
 
             <small>Assigned to <em>Kevin</em></small>
-            <p>Started on: <em>Thursday 24th Aug</em></p>
             <p>Completed on: <em>Teusday 29th Aug</em></p>
             <b-link href="#" class="card-link">Redo</b-link>
           </b-card>
@@ -18,7 +17,6 @@
             <b-card-text> Task description </b-card-text>
 
             <small>Assigned to <em>Kevin</em></small>
-            <p>Started on: <em>Thursday 24th Aug</em></p>
             <p>Completed on: <em>Teusday 29th Aug</em></p>
             <b-link href="#" class="card-link">Redo</b-link>
           </b-card>
