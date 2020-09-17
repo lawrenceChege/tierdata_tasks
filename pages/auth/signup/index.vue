@@ -61,7 +61,7 @@
           placeholder="********"
         ></b-form-input>
       </b-form-group>
-      <b-button class="width-vp" type="submit" variant="primary"
+      <b-button class="width-vp" to="/tasks" type="submit" variant="primary"
         >Sign Up</b-button
       >
       <p>
@@ -124,6 +124,7 @@ export default {
             'verification_code',
             response.data.verification_code
           )
+          // eslint-disable-next-line no-console
           console.log(sessionStorage.getItem('username'))
         })
         .catch(function (error) {
