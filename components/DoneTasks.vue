@@ -363,7 +363,7 @@
     margin-bottom: 0.75rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    background: #dee2e6;
+    background: #2fd4a2;
   }
   .card-list .card {
     border: none;

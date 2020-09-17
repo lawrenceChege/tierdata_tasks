@@ -51,6 +51,9 @@
   direction: ltr;
   -webkit-font-smoothing: antialiased;
 }
+.col {
+  background-color: beige;
+}
 
 /*! CSS Used from: https://pipeline.mediumra.re/assets/css/theme.css ; media=all */
 @media all {
@@ -366,7 +369,7 @@
     margin-bottom: 0.75rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    background: #dee2e6;
+    background: #3cd3ee;
   }
   .card-list .card {
     border: none;

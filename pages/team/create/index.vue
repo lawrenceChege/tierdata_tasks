@@ -31,13 +31,17 @@
           placeholder="X Men"
         ></b-form-input>
       </b-form-group>
-      <b-button class="width-vp" type="submit" variant="primary"
+      <b-button
+        class="width-vp"
+        to="/team/invite"
+        type="submit"
+        variant="primary"
         >Create</b-button
       >
     </b-form>
-    <b-card class="mt-3" header="Form Data Result">
+    <!-- <b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>
-    </b-card>
+    </b-card> -->
   </div>
 </template>
 

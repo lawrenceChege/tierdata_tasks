@@ -69,13 +69,15 @@
         <NuxtLink to="/auth/login">Login</NuxtLink>
       </p>
     </b-form>
-    <b-card class="mt-3" header="Form Data Result">
+    <!-- <b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>
-    </b-card>
+    </b-card> -->
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -91,6 +93,7 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault()
+      this.createUser()
     },
     onReset(evt) {
       evt.preventDefault()
@@ -103,6 +106,31 @@ export default {
         this.show = true
       })
     },
+    createUser() {
+      axios
+        .post('http://127.0.0.1:3543/signup/', {
+          username: this.form.username,
+          email: this.form.email,
+          phone_number: this.form.phone,
+          password: this.form.password,
+          verified: false,
+        })
+        .then(function (response) {
+          sessionStorage.setItem('username', this.form.username)
+          sessionStorage.setItem('email', this.form.email)
+          sessionStorage.setItem('phone_number', this.form.phone_number)
+          sessionStorage.setItem('password', this.form.password)
+          sessionStorage.setItem(
+            'verification_code',
+            response.data.verification_code
+          )
+          console.log(sessionStorage.getItem('username'))
+        })
+        .catch(function (error) {
+          // eslint-disable-next-line no-console
+          console.log(error.response)
+        })
+    }, // create user,
   },
 }
 </script>

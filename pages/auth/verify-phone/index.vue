@@ -28,7 +28,11 @@
         <NuxtLink to="/auth/signup">Resend code</NuxtLink>
       </div>
 
-      <b-button class="width-vp" type="submit" variant="primary"
+      <b-button
+        class="width-vp"
+        to="/team/create"
+        type="submit"
+        variant="primary"
         >Verify Phone</b-button
       >
     </b-form>

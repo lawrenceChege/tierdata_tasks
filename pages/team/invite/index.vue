@@ -42,14 +42,14 @@
           placeholder="johndoe@domian.com"
         ></b-form-input>
       </b-form-group>
-      <b-button class="width-vp" type="submit" variant="primary"
+      <b-button class="width-vp" to="/tasks" type="submit" variant="primary"
         >Invite Members</b-button
       >
       <b-button type="submit" variant="outline-success"> Skip </b-button>
     </b-form>
-    <b-card class="mt-3" header="Form Data Result">
+    <!-- <b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>
-    </b-card>
+    </b-card> -->
   </div>
 </template>
 
